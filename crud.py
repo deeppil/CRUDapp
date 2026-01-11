@@ -16,6 +16,7 @@ def get_students():
         students.append(student)
     return students 
 
+# READ by student id
 def get_student_by_id(student_id: str):
     student = student_collection.find_one({"_id": ObjectId(student_id)})
     if student:
