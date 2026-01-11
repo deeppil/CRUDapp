@@ -16,6 +16,12 @@ def get_students():
         students.append(student)
     return students 
 
+def get_student_by_id(student_id: str):
+    student = student_collection.find_one({"_id": ObjectId(student_id)})
+    if student:
+        student["_id"] = str(student["_id"])
+    return student
+
 
 # UPDATE - update a student using ID
 def update_student(student_id: str, updated_data: dict):
