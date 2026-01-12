@@ -1,7 +1,6 @@
 from pymongo import MongoClient
 
-MONGO_URL = "mongodb+srv://USERNAME:PASSWORD@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority"
-
+MONGO_URL = "mongodb+srv://deepakpil2006_db_user:UZMdudfEWTVdtt7W@crudapp.epfnwri.mongodb.net/?appName=CRUDapp"
 client = MongoClient(MONGO_URL)
 
 db = client["student_db"]
