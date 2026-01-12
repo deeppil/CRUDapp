@@ -8,8 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 # from app.models import Base
 
 app = FastAPI(
-    title="Morse API",
-    description="CRUD API for Morse project",
+    title="CRUD API",
+    description="CRUD API for Hackathon",
     version="1.0.0",
 )
 
